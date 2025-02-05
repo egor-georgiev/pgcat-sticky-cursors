@@ -1,5 +1,8 @@
 # Pgcat Sticky Cursors
 
+## What is this?
+This is a repository with instructions on how to reproduce [an issue](https://github.com/postgresml/pgcat/issues/903) with PgCat connection pooler
+
 ## Prerequisites
 
 - docker w/ compose plugin
