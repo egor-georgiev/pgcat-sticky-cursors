@@ -7,6 +7,7 @@ This is a repository with instructions on how to reproduce [an issue](https://gi
 
 - docker w/ compose plugin
 - psql
+- make
 
 ## How to reproduce
 
