@@ -29,7 +29,7 @@ This is a repository with instructions on how to reproduce [an issue](https://gi
   make kill-psql
   ```
 
-4. re-connect and verify that the connection persists
+4. re-connect and verify that the cursor persists
 -
   ```bash
   make session
