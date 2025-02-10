@@ -20,17 +20,16 @@ logs: ## logs
 
 .PHONY: session
 session: ## connect to session pgcat pool
-	@PGPASSWORD=postgres-session psql -h localhost -p 6432 -U postgres-session database_name
+	@PGPASSWORD=postgres psql -h localhost -p 6432 -U postgres session
 
 .PHONY: transaction
 transaction: ## connect to transaction pgcat pool
-	@PGPASSWORD=postgres psql -h localhost -p 6432 -U postgres database_name
-
-.PHONY: postgres
-postgres: ## connect directly to postgres
-	@PGPASSWORD=postgres psql -h localhost -p 5432 -U postgres database_name
+	@PGPASSWORD=postgres psql -h localhost -p 6432 -U postgres transaction
 
 .PHONY: kill-psql
 kill-psql: ## kill psql
 	@pkill psql
 
+.PHONY: pgadmin
+pgadmin:
+	@PGPASSWORD=pgadmin psql -h localhost -p 6432 -U pgadmin pgbouncer
